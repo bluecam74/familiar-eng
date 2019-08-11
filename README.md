@@ -22,7 +22,7 @@ This website was developed for an engineering firm. The "Contact" page contains 
 
 ***
 
-<p align="center"><img src="./public/images/FamScrnSht4.png" alt=“Scrape Preview Top” width="675"></p>
+<p align="center"><img src="./public/images/FamScrnSht4.png" alt=“Scrape Preview Top” width="375"></p>
 
 ***
 
