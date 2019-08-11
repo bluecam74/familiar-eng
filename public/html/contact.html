@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Adamina|Cinzel|Economica|Julius+Sans+One|Playfair+Display+SC|Taviraj&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Familiar Engineering</title>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "********",
+            authDomain: "**********.firebaseapp.com",
+            databaseURL: "https://**********.firebaseio.com",
+            projectId: "**********",
+            storageBucket: "**********.appspot.com",
+            messagingSenderId: "**********",
+            appId: "1:**********:web:**********"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <main>
+        <nav class="no-shadows border-bottom">
+            <div class="nav-wrapper nav-1">
+                <a href="../index.html" class="brand-logo fam-logo">Familiar Engineering</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="center-align card-title-contact">
+            <span class="center-align">Contact Us</span>
+        </div>
+        <div class="row center-align form-cont valign-wrapper">
+            <!-- <div class="col s1"></div>  -->
+            <div class="col s12" style="margin: 0;">
+                <div class="card form-card center-align">
+                    <div class="card-content">
+                        <div class="row" id="errorHeader1"></div>
+                        <div class="row">
+                            <form class="col s12 contact-form">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input name="first_name" id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input name="last_name" id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input name="email" id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input name="phone" id="phone" type="tel" class="validate">
+                                        <label for="phone">Telephone</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea name="address" id="address" class="materialize-textarea validate"></textarea>
+                                        <label for="address">Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea name="message" placeholder="How can we help?" id="message"
+                                            class="materialize-textarea validate"></textarea>
+                                        <label for="textarea1">Message</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button class="btn waves-effect waves-light submit-form" id="submit" type="submit"
+                                        name="action">Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col s1"></div>  -->
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script src="../js/contact.js"></script>
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
+    </main>
+</body>
+<footer class="page-footer copyright">
+    © 2019 Copyright
+</footer>
+
+</html>
