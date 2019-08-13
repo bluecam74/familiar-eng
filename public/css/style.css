@@ -167,21 +167,28 @@ margin-right: 40px;
     color: #7A7A7A;
 }
 
-.serv
+.serv-container
 {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.serv {
+    margin: 10px;
+
 }
 .serv1 
 {
     min-height: 200px;
-    min-width: 120px;
-    margin: 0 5% 0 5%;
+    width: 400px;
     background-color: rgb(68, 67, 67);
     color: #FFFCFF;
     font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -190,7 +197,7 @@ a.serv1
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-right: 0;
+    margin: auto;
 }
 
 a.serv1:hover 
@@ -209,6 +216,7 @@ a.serv1:hover
     font-size: 45px!important;
     color: #B8715B;
 }
+
 
 .input-field label 
 {
@@ -331,5 +339,77 @@ a.serv1:hover
     min-width: 100%;
 }
 
+.input-container 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-field 
+{
+    flex-basis: 47%;
+}
+
+.input-container-2 
+{
+    width: 100%
+}
 
 
+@media screen and (max-width: 900px) {
+
+    .serv-container
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .input-container
+    {
+        flex-direction: column;
+    }
+
+    .form-cont
+    {
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .serv-container
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .serv1 
+    {
+    min-height: 200px;
+    width: 300px;
+    background-color: rgb(68, 67, 67);
+    color: #FFFCFF;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    }
+
+    .brand-logo 
+    {
+        font-size: 1.5rem !important;
+    }
+
+    .form-cont
+    {
+        padding: 20px;
+    }
+}
