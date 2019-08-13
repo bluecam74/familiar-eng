@@ -18,6 +18,9 @@ app.set('view engine', 'html');
 app.get("/", function(req, res) {
   res.json(path.join(__dirname, "public/index.html"));
 });
+
+require("./routes/htmlroutes")(app)
+
   
 app.post('/api/contacts', (req, res) => {
   console.log("posted");
@@ -38,13 +41,13 @@ app.post('/api/contacts', (req, res) => {
   let transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
-      user: USER,
-      pass: PASS
+      user: 'famengcontactserver@gmail.com',
+      pass: '55Leemer65'
     }
 });
 let mailOptions = {
-    from: '"NodeMailer Contact" <FROM@gmail.com>', // sender address
-    to: 'TO@gmail.com',
+    from: '"NodeMailer Contact" <whitestork@ymail.com>', // sender address
+    to: 'bluecam74@gmail.com',
     subject: 'New Contact Request',
     text: 'You have a new contact!', // plain text body
     html: `<b> ${output} </b>` // html body
