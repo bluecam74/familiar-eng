@@ -41,8 +41,8 @@ app.post('/api/contacts', (req, res) => {
   let transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'famengcontactserver@gmail.com',
-      pass: '55Leemer65'
+      user: 'xxxxxxxxxxxxxxx@gmail.com',
+      pass: 'XXXXXXXXXXXXXX'
     }
 });
 let mailOptions = {
